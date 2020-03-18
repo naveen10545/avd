@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+Echo: Shasank
 function verify_access_token() {
     echo "VERIFYING PERSONAL ACCESS TOKEN"
     if [[ -z "$ACCESS_TOKEN_SECRET" ]]; then
@@ -19,6 +19,12 @@ function verify_repo() {
 function init() {
     cp -r ./* "$HOME/"
     cd "$HOME"
+}
+
+# Initialize Helm
+function helm2_init() {
+    echo "RUN HELM2 INIT"
+    helm init --client-only
 }
 
 # Obtain version for Fabrikate
