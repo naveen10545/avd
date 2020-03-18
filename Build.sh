@@ -22,8 +22,8 @@ function init() {
 }
 
 # Initialize Helm
-function helm_init() {
-    echo "RUN HELM INIT"
+function helm2_init() {
+    echo "RUN HELM2 INIT"
     helm init --client-only
 }
 
