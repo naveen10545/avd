@@ -64,8 +64,8 @@ function download_fab() {
     else
         echo "There was an error when downloading Fabrikate. Please check version number and try again."
     fi
-    wget "https://github.com/Microsoft/fabrikate/releases/download/$VERSION_TO_DOWNLOAD/fab-v$VERSION_TO_DOWNLOAD-$os-amd64.zip"
-    unzip "fab-v$VERSION_TO_DOWNLOAD-$os-amd64.zip" -d fab
+    wget "https://github.com/Microsoft/fabrikate/releases/download/0.17.0/fab-v0.17.0-$os-amd64.zip"
+    unzip "fab-v0.17.0-$os-amd64.zip" -d fab
 
     export PATH=$PATH:$HOME/fab
 }
