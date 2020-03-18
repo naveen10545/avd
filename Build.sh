@@ -27,10 +27,11 @@ function init() {
 # If the version number is not provided, then download the latest
 function get_fab_version() {
     # shellcheck disable=SC2153
+    $VERSION="0.17.0"
     if [ -z "$VERSION" ]
     then
         # By default, the script will use the most recent non-prerelease, non-draft release Fabrikate
-       # VERSION_TO_DOWNLOAD=$(curl -s "https://api.github.com/repos/microsoft/fabrikate/releases/latest" | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/')
+       VERSION_TO_DOWNLOAD=$(curl -s "https://api.github.com/repos/microsoft/fabrikate/releases/latest" | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/')
         echo "Fabrikate Version: $VERSION"   
     else
         echo "Fabrikate Version: $VERSION"
