@@ -27,7 +27,7 @@ function init() {
 # If the version number is not provided, then download the latest
 function get_fab_version() {
     # shellcheck disable=SC2153
-    $VERSION="0.17.0"
+    VERSION="0.17.0"
     if [ -z "$VERSION" ]
     then
         # By default, the script will use the most recent non-prerelease, non-draft release Fabrikate
