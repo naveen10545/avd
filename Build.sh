@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 function verify_access_token() {
