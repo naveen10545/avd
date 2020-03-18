@@ -22,10 +22,10 @@ function init() {
 }
 
 # Initialize Helm
-function helm_init() {
-    echo "RUN HELM INIT"
-    helm init --client-only
-}
+#function helm_init() {
+    #echo "RUN HELM INIT"
+   # helm init --client-only
+#}
 
 # Obtain version for Fabrikate
 # If the version number is not provided, then download the latest
